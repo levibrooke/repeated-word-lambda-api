@@ -7,8 +7,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+
+    @Test
+    public void findRepeat() {
+        String testThis = "Here's a string. It has a repeated word";
+
+        assertEquals("a", Library.findRepeat(testThis));
     }
 }
